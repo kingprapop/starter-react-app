@@ -1,5 +1,5 @@
 <script>
-  import ToDoItem from "./ToDoItem.svelte";
+  //import ToDoItem from "./ToDoItem.svelte";
 
 
   let todo = "";
