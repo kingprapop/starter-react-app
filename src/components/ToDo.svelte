@@ -1,5 +1,5 @@
 <script>
-  //import ToDoItem from "./ToDoItem.svelte";
+  import ToDoItem from "./ToDoItem.svelte";
 
 
   let todo = "";
@@ -86,7 +86,7 @@
   <div class="ToDo-Container">
     <div class="ToDo-Content">
       {#each list as item, i (item.id)}
-        <ToDoItem {item} on:deleteItem={deleteItem} />
+        <ToDoItem {item} on:deleteItem={deleteItem(i)} />
       {/each}
     </div>
     <input type="text" bind:value={todo} />
